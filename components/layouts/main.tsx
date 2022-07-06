@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app'
 
 const main = ({ children, router }: any) => {
     return (
-        <div class="font-fira">
+        <div className="font-fira">
             {children}
         </div>
     )
