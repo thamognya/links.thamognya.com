@@ -19,7 +19,9 @@ const Front = () => {
     return (
     <>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-2 place-items-center h-screen">
-            <img className="rounded-full hover:scale-125 transform-gpu" src="/pfp.jpeg" width="100" />
+            <a href="https://links.thamognya.com" target="_blank" rel="noreferrer" >
+                <img className="rounded-full hover:scale-125 transform-gpu" src="/pfp.jpeg" width="100" />
+            </a>
             <a href="https://www.thamognya.com" target="_blank" rel="noreferrer" className="py-5 md:px-10 px-20 rounded-full bg-zinc-400 bg-opacity-40 flex items-center">
                 <CgWebsite />
                 <h1 className="pl-2">Website</h1>
