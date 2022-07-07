@@ -17,9 +17,7 @@ const main = ({ children, router }: any) => {
                 </div>
                 <div className="container mx-auto md:px-20 px-5">
                     <Nav router={router}/>
-                    <>
                         {children}
-                    </>
                 </div>
         </div>
     )
