@@ -12,9 +12,10 @@ const main = ({ children, router }: any) => {
                     <meta name="description" content="Thamognya's Link" />
                     <meta name="author" content="Thamognya Kodi" />
                     <meta name="keywords" content="Thamognya, Kodi, Links" />
+                    <link rel="shortcut icon" href="/pfp.jpeg" /> 
                     <title>Thamognya Kodi - Links - {router.asPath}</title>
                 </div>
-                <div className="container mx-auto md:px-10 px-1">
+                <div className="container mx-auto md:px-20 px-5">
                     <Nav router={router}/>
                     <>
                         {children}
