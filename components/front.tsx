@@ -18,7 +18,7 @@ import {
 const Front = () => {
     return (
     <>
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-2 place-items-center h-screen">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-y-2 gap-x-10 place-items-center h-screen">
             <a href="https://links.thamognya.com" target="_blank" rel="noreferrer" >
                 <img className="rounded-full hover:scale-125 transform-gpu" src="/pfp.jpeg" width="100" />
             </a>
