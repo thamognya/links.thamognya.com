@@ -22,7 +22,7 @@ import {
 const Front = () => {
     return (
     <>
-        <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-2 gap-x-10 place-items-center h-screen">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-2 gap-x-10 place-items-center h-screen">
             <a href="https://links.thamognya.com" target="_blank" rel="noreferrer" >
                 <img className="rounded-full hover:scale-125 transform-gpu" src="/pfp.jpeg" width="100" />
             </a>
