@@ -1,12 +1,16 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Main from '../components/layouts/main'
+import dynamic from 'next/dynamic'
+
+const LazyMain = dynamic(() => import('../components/layouts/main'), {
+    ssr: true
+})
 
 function MyApp({ Component, pageProps, router }: AppProps) {
     return (
-        <Main router={router}>
+        <LazyMain router={router}>
             <Component {...pageProps} />
-        </Main>
+        </LazyMain>
     )
 }
 

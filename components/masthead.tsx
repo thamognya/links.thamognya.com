@@ -1,9 +1,13 @@
 import Full from '../components/front'
 import React from 'react'
 import Image from 'next/image'
-import Front from './front'
+import dynamic from 'next/dynamic'
 
 const LazyVideoBg = dynamic(() => import('./videoBg'), {
+    ssr: true
+})
+
+const LazyFront = dynamic(() => import('./front'), {
     ssr: true
 })
 
@@ -20,7 +24,7 @@ const masthead = () => {
                 <LazyVideoBg />
             </video>
             <div className="font-bold text-black z-10">
-                <Front />
+                <LazyFront />
             </div>
         </div>
     )

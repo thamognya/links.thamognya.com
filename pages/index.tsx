@@ -2,12 +2,15 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import Masthead from '.././components/masthead'
+import dynamic from 'next/dynamic'
 
+const LazyMasthead = dynamic(() => import('../components/masthead'), {
+    ssr: true
+})
 const Home: NextPage = () => {
     return (
         <>
-            <Masthead />
+            <LazyMasthead />
         </>
     )
 }
