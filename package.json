@@ -10,7 +10,7 @@
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json}'"
     },
     "dependencies": {
-        "@fontsource/fira-code": "^4.5.10",
+        "@fontsource/fira-code": "^4.5.11",
         "next": "12.2.2",
         "react": "18.2.0",
         "react-dom": "18.2.0",
