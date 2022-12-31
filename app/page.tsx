@@ -1,3 +1,17 @@
+import { BsLinkedin } from 'react-icons/bs'
+
+const SocialMedia = (props: any) => {
+    return (
+        <>
+            <div className={`${props.color} hover:scale-125`}>
+                <div className="flex justify-between items-center gap-x-2">
+                    {props.name} {props.children}
+                </div>
+            </div>
+        </>
+    )
+}
+
 export default function Home() {
     return (
         <main>
@@ -17,7 +31,9 @@ export default function Home() {
                 </video>
                 <div className="font-bold text-black z-10 text-3xl">
                     <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3   sm:grid-cols-2 grid-cols-2 place-items-center h-screen gap-y-2 gap-x-10">
-                        <h1>LinkedIN</h1>
+                        <SocialMedia name="LinkedIn" color="bg-blue-500">
+                            <BsLinkedin />
+                        </SocialMedia>
                         <h1>reddit</h1>
                         <h1>github</h1>
                         <h1>gitea</h1>
