@@ -8,6 +8,7 @@ const SocialMedia = (props: any) => {
                     {props.name} {props.children}
                 </div>
             </div>
+            {props.children}
         </>
     )
 }
@@ -34,15 +35,15 @@ export default function Home() {
                         <SocialMedia name="LinkedIn" color="bg-blue-500">
                             <BsLinkedin />
                         </SocialMedia>
-                        <h1>reddit</h1>
-                        <h1>github</h1>
-                        <h1>gitea</h1>
-                        <h1>github</h1>
-                        <h1>cv</h1>
-                        <h1>email</h1>
-                        <h1>blog</h1>
-                        <h1>research</h1>
-                        <h1>projects</h1>
+                        <h1>Reddit</h1>
+                        <h1>Github</h1>
+                        <h1>Gitea</h1>
+                        <h1>Gitlab</h1>
+                        <h1>CV</h1>
+                        <h1>Email</h1>
+                        <h1>Blog</h1>
+                        <h1>Research</h1>
+                        <h1>Projects</h1>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
+        "export": "next build && next export",
         "lint": "npm run lint:upgrade:force && npm run lint:prettier",
         "lint:prettier": "prettier --write '**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,scss,sass,css,json}'",
         "lint:upgrade": "npx npm-check-updates",

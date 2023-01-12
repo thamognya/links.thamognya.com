@@ -1,6 +1,6 @@
 import './globals.css'
 import { Fira_Code } from '@next/font/google'
-const fira = Fira_Code({ subsets: ['monospace'], variable: '--font-fira' })
+const fira = Fira_Code({ variable: '--font-fira' })
 
 export default function RootLayout({
     children
