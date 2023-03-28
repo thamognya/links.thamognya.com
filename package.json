@@ -13,7 +13,7 @@
         "lint:upgrade:force": "npx npm-check-updates -u && npm i --force"
     },
     "dependencies": {
-        "@next/font": "13.1.6",
+        "@next/font": "13.2.4",
         "@types/node": "18.13.0",
         "@types/react": "18.0.30",
         "@types/react-dom": "18.0.10",
