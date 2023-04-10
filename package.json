@@ -1,34 +1,38 @@
 {
-    "name": "www.thamognya.com",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "export": "next build && next export",
-        "lint": "npm run lint:upgrade:force && npm run lint:prettier",
-        "lint:prettier": "prettier --write '**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,scss,sass,css,json}'",
-        "lint:upgrade": "npx npm-check-updates",
-        "lint:upgrade:force": "npx npm-check-updates -u && npm i --force"
-    },
-    "dependencies": {
-        "@next/font": "13.1.6",
-        "@types/node": "18.13.0",
-        "@types/react": "18.0.27",
-        "@types/react-dom": "18.0.10",
-        "eslint": "8.34.0",
-        "eslint-config-next": "13.1.6",
-        "next": "13.1.6",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
-        "react-icons": "^4.7.1",
-        "typescript": "4.9.5"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.13",
-        "postcss": "^8.4.21",
-        "prettier": "^2.8.4",
-        "tailwindcss": "^3.2.6"
-    }
+	"name": "links.thamognya.com",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.28.1",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.2.0",
+		"vitest": "^0.25.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"svelte-preprocess": "^5.0.3"
+	}
 }
